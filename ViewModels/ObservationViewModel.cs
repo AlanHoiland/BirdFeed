@@ -60,6 +60,9 @@ namespace BirdFeed.ViewModels
             }
         }
 
+        //
+        //
+        //
         private int searchRadius = 2;
         public int SearchRadius
         {
@@ -80,6 +83,9 @@ namespace BirdFeed.ViewModels
             }
         }
 
+        //
+        //
+        //
         private int daysBack = 30;
         public int DaysBack
         {
@@ -107,10 +113,13 @@ namespace BirdFeed.ViewModels
         //
         #region Functions
 
+        /// <summary>
+        /// Performs a GET to retrieve bird observations given the parameters selected.
+        /// Lat/Long is hard coded to downtown Calgary.
+        /// </summary>
         public void GetLatestObservations()
         {
             HttpClient client = new HttpClient();
-            //client.BaseAddress = new Uri("https://api.ebird.org/v2/data/obs/geo/recent?lat={{51.0453}}&lng={{-114.0581}}&sort=species");
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Add("X-eBirdApiToken", "vnu5fgrprfs3");
             client.DefaultRequestHeaders.Accept.Add(
@@ -129,12 +138,6 @@ namespace BirdFeed.ViewModels
             tl.Wait();
 
             TheObservations = new List<Observations>(tl.Result);
-            //if (response.IsSuccessStatusCode)
-            //{
-            //    product = await response.Content.ReadAsAsync<Product>();
-            //}
-            //return product;
-
         }
 
         #endregion

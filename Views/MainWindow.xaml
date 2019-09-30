@@ -9,8 +9,24 @@
         mc:Ignorable="d"
         FontSize="10"
         Title="Bird Feed"
+        WindowStartupLocation="CenterScreen"
         Height="900"
         Width="1100">
+
+    <Window.Resources>
+        <Style TargetType="{x:Type TextBlock}">
+            <Setter Property="FontSize"
+                    Value="16" />
+        </Style>
+
+        <Style TargetType="{x:Type xctk:IntegerUpDown}"
+               BasedOn="{StaticResource {x:Type xctk:IntegerUpDown}}">
+            <Setter Property="FontSize"
+                    Value="16" />
+        </Style>
+
+    </Window.Resources>
+
     <Viewbox Stretch="Uniform">
         <Grid Width="1075"
               Height="875"
@@ -42,45 +58,48 @@
                     <RowDefinition Height=".5*" />
                 </Grid.RowDefinitions>
 
+                <Border Grid.Row="0"
+                        Grid.Column="0"
+                        BorderBrush="Gray"
+                        BorderThickness="1" />
+
                 <TextBlock Grid.Row="0"
                            Grid.Column="0"
                            TextWrapping="Wrap"
-                           FontSize="16"
                            Height="62"
                            Margin="0,0,0,0.4"
                            VerticalAlignment="Bottom">This application accesses the bird observation data available from the web service at https://ebird.org</TextBlock>
 
+                <Border Grid.Row="1"
+                        Grid.Column="0"
+                        BorderBrush="Gray"
+                        BorderThickness="1" />
+
                 <TextBlock Grid.Row="1"
                            Grid.Column="0"
-                           TextWrapping="Wrap"
-                           FontSize="16">Query the data using the options below.</TextBlock>
+                           TextWrapping="Wrap">Query the data using the options below.</TextBlock>
 
                 <StackPanel Grid.Row="3"
                             Grid.Column="0"
                             Orientation="Horizontal"
                             FlowDirection="LeftToRight">
-                    <TextBlock FontSize="16"
-                               Text="Observations within "
+                    <TextBlock Text="Observations within "
                                Margin="0,0,1,0" />
 
-                    <xctk:IntegerUpDown FontSize="16"
-                                        Minimum="0"
+                    <xctk:IntegerUpDown Minimum="0"
                                         Maximum="50"
                                         VerticalContentAlignment="Top"
-                                        Value="{Binding SearchRadius, Mode=TwoWay}"/>
+                                        Value="{Binding SearchRadius, Mode=TwoWay}" />
 
-                    <TextBlock FontSize="16"
-                               Text="kms over "
+                    <TextBlock Text="kms over "
                                Margin="2,0,0,0" />
 
-                    <xctk:IntegerUpDown FontSize="16"
-                                        Minimum="1"
+                    <xctk:IntegerUpDown Minimum="1"
                                         Maximum="30"
                                         VerticalContentAlignment="Top"
                                         Value="{Binding DaysBack, Mode=TwoWay}" />
 
-                    <TextBlock FontSize="16"
-                               Text="days."
+                    <TextBlock Text="days."
                                Margin="2,0,0,0" />
 
                 </StackPanel>
@@ -91,7 +110,8 @@
                        Grid.RowSpan="4"
                        HorizontalAlignment="Stretch"
                        VerticalAlignment="Stretch"
-                       Source="C:\Users\alanh\source\repos\BirdFeed\Assets\P1140672.jpg">
+                       ToolTip="I took this photo of a Tree Swallow in the backyard."
+                       Source="..\Assets\P1140672.jpg">
                     <Image.Effect>
                         <DropShadowEffect />
                     </Image.Effect>

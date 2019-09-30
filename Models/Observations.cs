@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace BirdFeed.Models
 {
+    /// <summary>
+    /// This class ecapsulates the observation data
+    /// </summary>
     public class Observations
     {
         public string speciesCode { get; set; }
