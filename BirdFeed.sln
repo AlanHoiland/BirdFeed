@@ -12,8 +12,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BirdFeed_Lib", "BirdFeed_Lib\BirdFeed_Lib.csproj", "{70F8FB67-BC83-4BA9-9EDA-11C23A1D3F5B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BirdFeedTests", "..\BirdFeedTests\BirdFeedTests.csproj", "{20E99BDA-3479-4FF9-B3FD-BC29DEB84755}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BirdFeedUnitTests", "BirdFeedUnitTests\BirdFeedUnitTests.csproj", "{EBF7CAC4-6E41-45E4-B5AE-25F8D2FBBA01}"
 EndProject
 Global
@@ -30,10 +28,6 @@ Global
 		{70F8FB67-BC83-4BA9-9EDA-11C23A1D3F5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{70F8FB67-BC83-4BA9-9EDA-11C23A1D3F5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{70F8FB67-BC83-4BA9-9EDA-11C23A1D3F5B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{20E99BDA-3479-4FF9-B3FD-BC29DEB84755}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{20E99BDA-3479-4FF9-B3FD-BC29DEB84755}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{20E99BDA-3479-4FF9-B3FD-BC29DEB84755}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{20E99BDA-3479-4FF9-B3FD-BC29DEB84755}.Release|Any CPU.Build.0 = Release|Any CPU
 		{EBF7CAC4-6E41-45E4-B5AE-25F8D2FBBA01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EBF7CAC4-6E41-45E4-B5AE-25F8D2FBBA01}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EBF7CAC4-6E41-45E4-B5AE-25F8D2FBBA01}.Release|Any CPU.ActiveCfg = Release|Any CPU
