@@ -10,26 +10,22 @@
         FontSize="10"
         Title="Bird Feed"
         WindowStartupLocation="CenterScreen"
-        Height="900"
+        Height="800"
         Width="1100">
-
     <Window.Resources>
         <Style TargetType="{x:Type TextBlock}">
             <Setter Property="FontSize"
                     Value="16" />
         </Style>
-
         <Style TargetType="{x:Type xctk:IntegerUpDown}"
                BasedOn="{StaticResource {x:Type xctk:IntegerUpDown}}">
             <Setter Property="FontSize"
                     Value="16" />
         </Style>
-
     </Window.Resources>
-
     <Viewbox Stretch="Uniform">
         <Grid Width="1075"
-              Height="875"
+              Height="775"
               Margin="0,10">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1*" />
@@ -42,7 +38,6 @@
                 <RowDefinition Height="1*" />
                 <RowDefinition Height="1*" />
             </Grid.RowDefinitions>
-
             <Grid Grid.Row="0"
                   Grid.Column="0"
                   Grid.ColumnSpan="3">
@@ -57,53 +52,46 @@
                     <RowDefinition Height="1*" />
                     <RowDefinition Height=".5*" />
                 </Grid.RowDefinitions>
-
                 <Border Grid.Row="0"
                         Grid.Column="0"
                         BorderBrush="Gray"
                         BorderThickness="1" />
-
                 <TextBlock Grid.Row="0"
                            Grid.Column="0"
                            TextWrapping="Wrap"
+                           Padding="5"
+                           FontSize="14"
                            Height="62"
                            Margin="0,0,0,0.4"
                            VerticalAlignment="Bottom">This application accesses the bird observation data available from the web service at https://ebird.org</TextBlock>
-
                 <Border Grid.Row="1"
                         Grid.Column="0"
                         BorderBrush="Gray"
                         BorderThickness="1" />
-
                 <TextBlock Grid.Row="1"
                            Grid.Column="0"
+                           Padding="5"
+                           FontSize="14"
                            TextWrapping="Wrap">Query the data using the options below.</TextBlock>
-
                 <StackPanel Grid.Row="3"
                             Grid.Column="0"
                             Orientation="Horizontal"
                             FlowDirection="LeftToRight">
                     <TextBlock Text="Observations within "
                                Margin="0,0,1,0" />
-
                     <xctk:IntegerUpDown Minimum="0"
                                         Maximum="50"
                                         VerticalContentAlignment="Top"
                                         Value="{Binding SearchRadius, Mode=TwoWay}" />
-
                     <TextBlock Text="kms over "
                                Margin="2,0,0,0" />
-
                     <xctk:IntegerUpDown Minimum="1"
                                         Maximum="30"
                                         VerticalContentAlignment="Top"
                                         Value="{Binding DaysBack, Mode=TwoWay}" />
-
                     <TextBlock Text="days."
                                Margin="2,0,0,0" />
-
                 </StackPanel>
-
                 <Image Grid.Column="1"
                        Grid.Row="0"
                        Grid.ColumnSpan="2"
@@ -116,9 +104,7 @@
                         <DropShadowEffect />
                     </Image.Effect>
                 </Image>
-
             </Grid>
-
             <DataGrid Grid.Row="1"
                       Grid.Column="0"
                       Grid.ColumnSpan="3"
@@ -132,7 +118,6 @@
                     <DropShadowEffect />
                 </DataGrid.Effect>
             </DataGrid>
-
         </Grid>
     </Viewbox>
 </Window>
