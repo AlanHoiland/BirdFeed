@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BirdFeed_Lib", "BirdFeed_Li
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BirdFeedTests", "..\BirdFeedTests\BirdFeedTests.csproj", "{20E99BDA-3479-4FF9-B3FD-BC29DEB84755}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BirdFeedUnitTests", "BirdFeedUnitTests\BirdFeedUnitTests.csproj", "{EBF7CAC4-6E41-45E4-B5AE-25F8D2FBBA01}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,10 @@ Global
 		{20E99BDA-3479-4FF9-B3FD-BC29DEB84755}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20E99BDA-3479-4FF9-B3FD-BC29DEB84755}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20E99BDA-3479-4FF9-B3FD-BC29DEB84755}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBF7CAC4-6E41-45E4-B5AE-25F8D2FBBA01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBF7CAC4-6E41-45E4-B5AE-25F8D2FBBA01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBF7CAC4-6E41-45E4-B5AE-25F8D2FBBA01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBF7CAC4-6E41-45E4-B5AE-25F8D2FBBA01}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

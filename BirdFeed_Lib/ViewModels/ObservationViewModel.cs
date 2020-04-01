@@ -125,7 +125,6 @@ namespace BirdFeed.ViewModels
             client.DefaultRequestHeaders.Accept.Add(
                 new MediaTypeWithQualityHeaderValue("application/json"));
 
-            Observations obs = null;
             string url = string.Format("https://api.ebird.org/v2/data/obs/geo/recent?lat=51.0453&lng=-114.0581&sort=species&dist={0}&back={1}", SearchRadius, DaysBack);
             Task<HttpResponseMessage> t = client.GetAsync(url);
             t.Wait();
